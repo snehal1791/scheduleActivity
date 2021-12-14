@@ -88,7 +88,7 @@ class App extends Component {
   render(){
     return (
       <Routes>
-        <Route path='/' element={
+        <Route path={process.env.PUBLIC_URL + '/'} element={
           <ScheduleActivity
             activities={this.state.activities}
             onDeleteActivity={this.onDeleteActivity}
