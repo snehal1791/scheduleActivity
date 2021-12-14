@@ -6,48 +6,7 @@ import CreateActivity from './CreateActivity';
 
 class App extends Component {
   state= {
-    activities: [
-      {
-        id: 1,
-        activityName: 'Walking Tour',
-        date: '2021-10-10',
-        startTime: '11:00',
-        endTime: '13:00',
-        numMaxGuests: 10
-      },
-      {
-        id: 2,
-        activityName: 'Walking Tour',
-        date: '2021-10-10',
-        startTime: '11:00',
-        endTime: '13:00',
-        numMaxGuests: 10
-      },
-      {
-        id: 3,
-        activityName: 'Walking Tour',
-        date: '2021-10-10',
-        startTime: '11:00',
-        endTime: '13:00',
-        numMaxGuests: 10
-      },
-      {
-        id: 4,
-        activityName: '4 Tour',
-        date: '2021-10-10',
-        startTime: '11:00',
-        endTime: '13:00',
-        numMaxGuests: 10
-      },
-      {
-        id: 5,
-        activityName: '5 Tour',
-        date: '2021-10-10',
-        startTime: '11:00',
-        endTime: '13:00',
-        numMaxGuests: 10
-      }
-    ]
+    activities: []
   }
   handleCreateActivity = (activityObj) => {
     this.createActivity(activityObj);
@@ -88,7 +47,7 @@ class App extends Component {
   render(){
     return (
       <Routes>
-        <Route path={process.env.PUBLIC_URL + '/'} element={
+        <Route path='/' element={
           <ScheduleActivity
             activities={this.state.activities}
             onDeleteActivity={this.onDeleteActivity}
