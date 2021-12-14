@@ -60,7 +60,7 @@ Run this command on the Node.js terminal.
 ## Future Enhancements
 
 1. Add database to store the timeslots.
-2. Include a login functionaity to make the timeslots specific to a user.
+2. Include a login functionality to make the timeslots specific to a user.
 3. Capability to be able to filter by date, time and the maximm number of guests.
 
 
