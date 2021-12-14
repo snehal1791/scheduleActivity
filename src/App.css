@@ -251,3 +251,25 @@ h2.activity-name {
 .no-activities {
   padding: 50px;
 }
+.list-activities-top {
+  width: 100%;
+  margin: 10px;
+  padding: 10px;
+  
+}
+input.search-activities {
+    width: 75%;
+    padding: 10px 5px;
+    border-radius: 5px;
+    border: 2px solid #F6F6F6;
+    box-shadow: 0px 1px 3px 0px #6ccdd670, 0px 0px 0px 1px #bde360;
+    font-size: 16px;
+    font-family: serif;
+}
+input.search-activities:focus {
+  outline-color: transparent;
+}
+.search-result {
+  display: block;
+  text-align: center;
+}
