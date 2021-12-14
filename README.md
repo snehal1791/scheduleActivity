@@ -10,24 +10,40 @@ Schedule Activity is an app where you can keep track of your timeslots. Add, edi
 │   ├── favicon.ico # React Icon
 │   └── index.html
 └── src
-    ├── App.css # Custom Styles for the app.
-    ├── App.js # This is the root of the app.
-    ├── ScheduleActivity.js # Used for rendering header, New Activity button and ListOfActivities Component.
-    ├── ListOfActivities.js # This component displays the Search bar and the list of activities in sorted order. It renders EditableActivity Component and the ActivityForm component when an activity is edited.
-    ├── CreateActivity.js # Used for creating new scheduled activity.
-    ├── EditableActivity.js # Used for displaying each scheduled activity.
-    ├── ActivityForm.js # Used for displaying the editable form that appears after clicking the New Activity button or the pen icon on the already scheduled activity in the ListOfActivities.
-    ├── icons # Helpful images for your app.
+    ├── App.css 
+        # Custom Styles for the app.
+    ├── App.js 
+        # This is the root of the app.
+    ├── ScheduleActivity.js 
+        # Used for rendering header, New Activity button and ListOfActivities Component.
+    ├── ListOfActivities.js 
+        # This component displays the Search bar and the list of activities in sorted order.
+        # It renders EditableActivity Component and the ActivityForm component when an activity is edited.
+    ├── CreateActivity.js 
+        # Used for creating new scheduled activity.
+    ├── EditableActivity.js 
+        # Used for displaying each scheduled activity.
+    ├── ActivityForm.js 
+        # Used for displaying the editable form that appears after clicking the New Activity button or the pen icon on the already scheduled activity in the ListOfActivities.
+    ├── icons 
+        # Helpful images for your app.
     │   ├── arrow-back.svg
     │   ├── pen-to-square-solid.svg
     │   ├── trash-can-solid.svg
     │   ├── user-group-solid.svg
-    ├── __tests__ # Used for testing.
-        ├── App.test.js # Used for testing Snapshot of <App />.
-        ├── ActivityForm.test.js # Used for testing instance of <ActivityForm />. To check if the data being passed to activityName is valid.
-        ├── ListOfActivities.test.js # Used for testing props of <ListOfActivities />.
-    ├── index.css # Global styles.
-    └── index.js # It is used for DOM rendering only.
+    ├── __tests__ 
+        # Used for testing.
+        ├── App.test.js 
+            # Used for testing Snapshot of <App />.
+        ├── ActivityForm.test.js 
+            # Used for testing instance of <ActivityForm />.
+            To check if the data being passed to activityName is valid.
+        ├── ListOfActivities.test.js 
+            # Used for testing props of <ListOfActivities />.
+    ├── index.css 
+        # Global styles.
+    └── index.js 
+        # It is used for DOM rendering only.
 ```
 # Getting Started with the App
 
