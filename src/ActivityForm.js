@@ -52,7 +52,8 @@ class ActivityForm extends Component {
                         name='activity name' 
                         placeholder='Enter Name of the Acitivity' 
                         value={this.state.activityName} 
-                        onChange={this.handleNameChange} />
+                        onChange={this.handleNameChange}
+                        required />
                 </div>
                 <div className='field'>
                     <label className='activity-date-label'>Date: </label>
@@ -60,7 +61,8 @@ class ActivityForm extends Component {
                         type='date' 
                         name='activity date' 
                         value={this.state.date}
-                        onChange={this.handleDateChange} />
+                        onChange={this.handleDateChange}
+                        required />
                 </div>
                 <div className='field'>
                     <label className='activity-start-time-label'>Start Time: </label>
@@ -68,7 +70,8 @@ class ActivityForm extends Component {
                         type='time' 
                         name='activity start time' 
                         value={this.state.startTime}
-                        onChange={this.handleStartTimeChange} />
+                        onChange={this.handleStartTimeChange}
+                        required />
                 </div>
                 <div className='field'>
                     <label className='activity-end-time-label'>End Time: </label>
@@ -76,7 +79,8 @@ class ActivityForm extends Component {
                         type='time' 
                         name='activity end time' 
                         value={this.state.endTime}
-                        onChange={this.handleEndTimeChange} />
+                        onChange={this.handleEndTimeChange}
+                        required />
                 </div>
                 <div className='field'>
                     <label className='activity-name-label'>Maximum Number of Guests: </label>
