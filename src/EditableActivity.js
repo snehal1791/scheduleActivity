@@ -29,10 +29,6 @@ class EditableActivity extends Component {
                         <span className='guest-icon'></span>
                         {this.props.numMaxGuests}
                     </div>
-                    
-                    {/* <div className='activity-date'>{activity.date}</div>
-                    <div className='activity-start-time'>{activity.startTime}</div>
-                    <div className='activity-end-time'>{activity.endTime}</div> */}
                 </div>
                 <div className="extra-content">
                     <button 
