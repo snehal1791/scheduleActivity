@@ -4,6 +4,10 @@ import { Component } from 'react';
 
 class ScheduleActivity extends Component {
   render(){
+    const activities = this.props.activities;
+    const sortedActivities = activities.sort((firstActivity, secondActivity) => 
+      (firstActivity.activityName > secondActivity.activityName) ? 1 : ((firstActivity.activityName < secondActivity.activityName) ? -1 : 0))
+    console.log(sortedActivities);
     return (
       <div className='App'>
         <header className='App-header'>
@@ -17,10 +21,10 @@ class ScheduleActivity extends Component {
           </div>
         </header>
         <main className='App-main'>
-          {this.props.activities.length ?
+          {activities.length ?
             <ListOfActivities 
               className='activity container'
-              activities={this.props.activities}
+              activities={sortedActivities}
               onDeleteActivity={this.props.onDeleteActivity}
               onFormSubmit={this.props.onFormSubmit} />
             :
