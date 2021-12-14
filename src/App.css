@@ -248,3 +248,6 @@ h2.activity-name {
   color: #797979;
   font-size: 0.95em;
 }
+.no-activities {
+  padding: 50px;
+}
