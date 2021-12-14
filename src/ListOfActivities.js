@@ -5,7 +5,8 @@ import EditableActivity from "./EditableActivity";
 class ListOfActivities extends Component {
     state = {
         editFormOpen: false,
-        activityToEdit: null
+        activityToEdit: null,
+        query: ''
     }
     handleFormEdit = (activityId) => {
         this.setState({
@@ -20,8 +21,22 @@ class ListOfActivities extends Component {
         this.props.onFormSubmit(activityObj);
         this.handleFormClose();
     }
+    updateQuery = (query) => {
+		this.setState(() => ({
+			query: query.trim()
+		}))
+	}
+	clearQuery = () => {
+		this.updateQuery('')
+	}
     render() {
-        const editableActivities = this.props.activities.map((activity) => (
+        const activities = this.props.activities;
+        const { query } = this.state;
+        const showingActivity = query === ''
+		? activities
+		: activities.filter((activity) => (
+			activity.activityName.toLowerCase().includes(query.toLowerCase())))
+        const editableActivities = showingActivity.map((activity) => (
             <EditableActivity
                 key={activity.id}
                 id={activity.id}
@@ -33,7 +48,7 @@ class ListOfActivities extends Component {
                 onDeleteActivity={this.props.onDeleteActivity}
                 openForm={this.handleFormEdit} />
         ))
-        const editActivityForm = this.props.activities.filter((activity) => {
+        const editActivityForm = showingActivity.filter((activity) => {
             return activity.id === this.state.activityToEdit
         });
         if(this.state.editFormOpen) {
@@ -53,6 +68,17 @@ class ListOfActivities extends Component {
         } else {
             return (
                 <div className='list-of-activities row'>
+                    <div className='list-activities-top'>
+                        <input 
+                            className='search-activities'
+                            type='text'
+                            placeholder='Search Activity by Name'
+                            value={this.state.query}
+                            onChange={(event) => this.updateQuery(event.target.value)}
+                        />
+                        {query ? <span className='search-result'>Now showing activities {editableActivities.length} of {activities.length}</span> : ''}
+                        
+                    </div>
                     {editableActivities}
                 </div>
             )
