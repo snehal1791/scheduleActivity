@@ -17,11 +17,15 @@ class ScheduleActivity extends Component {
           </div>
         </header>
         <main className='App-main'>
-          <ListOfActivities 
-            className='activity container'
-            activities={this.props.activities}
-            onDeleteActivity={this.props.onDeleteActivity}
-            onFormSubmit={this.props.onFormSubmit} />
+          {this.props.activities.length ?
+            <ListOfActivities 
+              className='activity container'
+              activities={this.props.activities}
+              onDeleteActivity={this.props.onDeleteActivity}
+              onFormSubmit={this.props.onFormSubmit} />
+            :
+            <div className='no-activities'>Schedule new activities by clicking on the "New Activity" button or navigate to "/createActivity"</div>
+        }
         </main>
       </div>
     );
