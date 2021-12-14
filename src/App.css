@@ -1,22 +1,10 @@
 .App {
   text-align: center;
-  
 }
-
 .App-logo {
   height: 10vmin;
-  /* pointer-events: none; */
 }
-
-/* @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-} */
-
 .App-header {
-  /* background-color: #282c34; */
-  /* min-height: 100vh; */
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -25,7 +13,6 @@
   color: #000000;
   border-bottom: 2px solid #F6F6F6!important;
 }
-
 .App-header:before {
   content: '';
   height: 4px;
@@ -42,31 +29,17 @@ h1.header-title {
 }
 .left-container {
   flex: 0 1 auto;
-  /* left: 0; */
   align-items: center;
 }
-
 .right-container {
   flex: 1 1 auto;
   display: flex;
   justify-content: flex-end !important;
 }
-/* .App-header .container .header-title {
-  width: 100%;
-  align-items: center;
-} */
 .App-link {
   color: #61dafb;
 }
 
-/* @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
 main.create-activity-main,
 main .edit-activity-main {
     margin: 1rem 1em;
@@ -163,8 +136,6 @@ main .edit-activity-main {
   flex-wrap: wrap;
 }
 .list-of-activities .content {
-  
-  /* background-image: linear-gradient(to right,#fff40040,#6ccdd670); */
   display: block;
   margin: 10px 20px;
   min-width: 250px;
