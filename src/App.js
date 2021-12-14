@@ -88,12 +88,12 @@ class App extends Component {
   render(){
     return (
       <Routes>
-        <Route path='/' element={
+        <Route path={process.env.PUBLIC_URL + '/'} element={
           <ScheduleActivity
             activities={this.state.activities}
             onDeleteActivity={this.onDeleteActivity}
             onFormSubmit={this.handleFormSubmit} />} />
-        <Route path='/createActivity' element={
+        <Route path={process.env.PUBLIC_URL + '/createActivity'} element={
           <CreateActivity
             onFormSubmit={this.handleCreateActivity} />} />
       </Routes>
