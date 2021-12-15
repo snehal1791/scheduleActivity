@@ -45,6 +45,19 @@ Schedule Activity is an app where you can keep track of your timeslots. Add, edi
     └── index.js 
         # It is used for DOM rendering only.
 ```
+
+## Interface and Flow of the App
+
+### Outline of App
+
+The below image is showing the rough outline of how the app should look like.
+
+![](images/outlineOfApp.jpg)
+
+The below image is showing the hierarchical tree of the components
+
+![](images/componentHierarchicalTree.jpg)
+
 # Getting Started with the App
 
 This project is hosted at Netlify [Snehal's Schedule Activity](https://snehal-schedule-activity.netlify.app/).
