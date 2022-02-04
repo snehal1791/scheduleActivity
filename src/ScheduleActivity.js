@@ -7,7 +7,6 @@ class ScheduleActivity extends Component {
     const activities = this.props.activities;
     const sortedActivities = activities.sort((firstActivity, secondActivity) => 
       (firstActivity.activityName > secondActivity.activityName) ? 1 : ((firstActivity.activityName < secondActivity.activityName) ? -1 : 0))
-    console.log(sortedActivities);
     return (
       <div className='App'>
         <header className='App-header'>

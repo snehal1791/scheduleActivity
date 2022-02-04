@@ -273,3 +273,148 @@ input.search-activities:focus {
   display: block;
   text-align: center;
 }
+.list-of-activities.row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.list-of-activities .content {
+  display: block;
+  margin: 10px 20px;
+  min-width: 250px;
+  border-radius: 5px;
+  border: 2px solid #F6F6F6;
+  border-top: 4px solid #C1E45A;
+  box-shadow: 0px 1px 3px 0px #6ccdd670, 0px 0px 0px 1px #bde360; 
+}
+.create-activity .container {
+  justify-content: center;
+  display: flex;
+  width: 100%;
+}
+.close-create-activity {
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-image: url('./icons/arrow-back.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 30px;
+  font-size: 0;
+}
+.extra-content-buttons {
+  width: 40px;
+  height: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 15px;
+  font-size: 0;
+  border: 0;
+  background-color: transparent;
+}
+.extra-content-buttons:hover {
+  cursor: pointer;
+  box-shadow: inset 0px -3px 0px 0px #FFF400, 0px 0px 0px 0px;;
+}
+.trash-icon {
+  background-image: url('./icons/trash-can-solid.svg');
+}
+.edit-icon {
+  background-image: url('./icons/pen-to-square-solid.svg');
+}
+.activity-guests{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.guest-icon {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url('./icons/user-group-solid.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 15px;
+  font-size: 0;
+}
+.buttons-segment {
+  text-align: center;
+}
+.basic-button,
+.cancel-activity,
+.create-activity-link {
+  margin: 0 20px;
+  padding: 8px 30px;
+  background-color: #fff;
+  border: solid 1px #000;
+  color: #000;
+  box-shadow: none;
+  font-size: 1em;
+  font-family: serif;
+}
+.cancel-activity,
+.create-activity-link {
+  text-decoration: none;
+}
+.basic-button:hover,
+.cancel-activity:hover,
+.create-activity-link:hover {
+  cursor: pointer;
+  color: #fff;
+  background-color: #000;
+}
+.activities-content {
+  text-align: left;
+  padding: 0px 10px;
+}
+input[type="date"]:focus,
+input[type="time"]:focus,
+input[type="number"]:focus,
+input[type="text"]:focus {
+  color: rgba(0, 0, 0, 0.95);
+  border-color: #85B7D9;
+  border-radius: 0.28571429rem;
+  background: #FFFFFF;
+  box-shadow: 0px 0em 0em 0em rgb(34 36 38 / 35%) inset;
+}
+input[type="date"]:hover,
+input[type="time"]:hover,
+input[type="number"]:hover,
+input[type="text"]:hover {
+  cursor: text;
+}
+h2.activity-name {
+  margin-bottom: 5px;
+  color: #375565;
+}
+.activity-info, .activity-time, .activity-guests {
+  color: #797979;
+  font-size: 0.95em;
+}
+.no-activities {
+  padding: 50px;
+}
+.list-activities-top {
+  width: 100%;
+  margin: 10px;
+  padding: 10px;
+  
+}
+input.search-activities {
+    width: 75%;
+    padding: 10px 5px;
+    border-radius: 5px;
+    border: 2px solid #F6F6F6;
+    box-shadow: 0px 1px 3px 0px #6ccdd670, 0px 0px 0px 1px #bde360;
+    font-size: 16px;
+    font-family: serif;
+}
+input.search-activities:focus {
+  outline-color: transparent;
+}
+.search-result {
+  display: block;
+  text-align: center;
+}
