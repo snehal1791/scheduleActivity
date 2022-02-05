@@ -95,7 +95,6 @@ main .edit-activity-main {
   margin: 0em;
   outline: none;
   -webkit-appearance: none;
-  tap-highlight-color: rgba(255, 255, 255, 0);
   line-height: 1.2142em;
   padding: 0.6em 0.2em;
   background: #FFFFFF;
