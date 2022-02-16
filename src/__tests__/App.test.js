@@ -1,17 +1,23 @@
-import { render } from '@testing-library/react';
-import { create } from 'react-test-renderer';
-import * as ReactDOM from 'react-dom';
+
+import React from 'react';
 import App from '../App';
-test.skip('renders learn react link', () => {
-  const { getByText } = render(<App />);
-  const linkElement = getByText(/Schedule Activities/i);
-  expect(linkElement).toBeInTheDocument();
+import Adapter from 'enzyme-adapter-react-16';
+import { shallow, configure } from 'enzyme';
+
+configure({ adapter: new Adapter() });
+
+describe('App', () => {
+  let wrapper;
+
+  beforeEach(() => {
+    wrapper = shallow(
+      <App />
+    );
+  });
+
+  it('initializes `activities` to a blank array', () => {
+    expect(
+      wrapper.state().activities
+    ).toEqual([]);
+  });
 });
-
-describe('Snapshot test of App', () => {
-  it('should match the snapshot', () => {
-    const testInstanceAppSnapshot = create(<App />).toJSON();
-
-    expect(testInstanceAppSnapshot).toMatchSnapshot();
-  })
-})
